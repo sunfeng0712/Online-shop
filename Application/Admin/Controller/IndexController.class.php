@@ -7,14 +7,22 @@
  */
 namespace Admin\Controller;
 use Think\Controller;
-class AdminController extends Controller
+class IndexController extends Controller
 {
     public function __construct()
     {
         parent::__construct();
     }
+
+    /**
+     * 后台首页
+     */
     public function index()
     {
-
+        $this->display();
+    }
+    public function welcome()
+    {
+        $this->display();
     }
 }

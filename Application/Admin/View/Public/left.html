@@ -1,0 +1,148 @@
+<aside class="main-sidebar" style="overflow-y:auto;">
+      <section class="sidebar">
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+          <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+            </span>
+          </div>
+        </form>
+        <!-- /.search form -->
+        <ul class="sidebar-menu">
+          <li class="treeview">
+            <a href="javascript:void(0)">
+              <i class="fa  fa-cog"></i><span>权限管理</span><i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li  ><a href="{:U('Admin/admin/admin_info')}" target='rightContent'><i class="fa fa-circle-o"></i>管理员列表</a></li>
+              <li  ><a href="{:U('Admin/admin/admin_log')}" target='rightContent'><i class="fa fa-circle-o"></i>管理员日志列表</a></li>
+            </ul>
+          </li>
+
+          <li class="treeview">
+            <a href="javascript:void(0)">
+              <i class="fa  fa-pencil"></i><span>网站设置</span><i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li  ><a href="{:U('Admin/system/index')}" target='rightContent'><i class="fa fa-circle-o"></i>网站设置</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>导航设置</a></li>
+            </ul>
+          </li>
+
+          <li class="treeview">
+            <a href="javascript:void(0)">
+              <i class="fa  fa-user"></i><span>会员管理</span><i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li  ><a href="{:U('Admin/system/index')}" target='rightContent'><i class="fa fa-circle-o"></i>会员列表</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>会员等级列表</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>评论列表</a></li>
+            </ul>
+          </li>
+
+          <li class="treeview">
+            <a href="javascript:void(0)">
+              <i class="fa  fa-tasks"></i><span>商品管理</span><i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li  ><a href="{:U('Admin/system/index')}" target='rightContent'><i class="fa fa-circle-o"></i>商品分类</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>商品列表</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>商品类型</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>商品规格</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>商品属性</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>商品品牌</a></li>
+            </ul>
+          </li>
+
+          <li class="treeview">
+            <a href="javascript:void(0)">
+              <i class="fa  fa-navicon"></i><span>内容管理</span><i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li  ><a href="{:U('Admin/system/index')}" target='rightContent'><i class="fa fa-circle-o"></i>文章分类</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>文章列表</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>友情链接</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>专题列表</a></li>
+            </ul>
+          </li>
+
+          <li class="treeview">
+            <a href="javascript:void(0)">
+              <i class="fa  fa-star"></i><span>广告管理</span><i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li  ><a href="{:U('Admin/system/index')}" target='rightContent'><i class="fa fa-circle-o"></i>广告位</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>广告列表</a></li>
+            </ul>
+          </li>
+
+          <li class="treeview">
+            <a href="javascript:void(0)">
+              <i class="fa  fa-star"></i><span>促销管理</span><i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li  ><a href="{:U('Admin/system/index')}" target='rightContent'><i class="fa fa-circle-o"></i>优惠劵</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>团购管理</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>组合促销</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>砍价管理</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>分销管理</a></li>
+            </ul>
+          </li>
+
+          <li class="treeview">
+            <a href="javascript:void(0)">
+              <i class="fa fa-retweet"></i><span>订单管理</span><i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li  ><a href="{:U('Admin/system/index')}" target='rightContent'><i class="fa fa-circle-o"></i>订单列表</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>发货单列表</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>退货单列表</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>添加订单</a></li>
+            </ul>
+          </li>
+
+          <li class="treeview">
+            <a href="javascript:void(0)">
+              <i class="fa fa-bar-chart"></i><span>报表统计</span><i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li  ><a href="{:U('Admin/system/index')}" target='rightContent'><i class="fa fa-circle-o"></i>销售概括</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>销售排行</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>会员排行</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>销售明细</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>会员统计</a></li>
+              <li  ><a href="{:U('Admin/system/navigation')}" target='rightContent'><i class="fa fa-circle-o"></i>财务统计</a></li>
+            </ul>
+          </li>
+          <!--<li class="header">帮助中心</li>
+          <li><a href="http://www.tp-shop.cn/index.php/Doc/Index/index" target="_blank"><i class="fa fa-circle-o text-red"></i> <span>使用手册</span></a></li>
+          <li><a href="http://www.99soubao.com/tpshop_video/video.php" target="_blank"><i class="fa fa-circle-o text-yellow"></i> <span>视频教程</span></a></li>
+          <li><a href="http://www.tp-shop.cn/index.php/Doc/Index/index" target="_blank"><i class="fa fa-circle-o text-aqua"></i> <span>开发文档</span></a></li>
+        -->
+        </ul>
+      </section>
+</aside>
+<!-- <li class="treeview">
+           <a href="javascript:void(0)">
+             <i class="fa {$vo.icon}"></i><span>{$vo.title}</span><i class="fa fa-angle-left pull-right"></i>
+           </a>
+           <ul class="treeview-menu">
+             <foreach name="vo.submenu" item="vv" key="kk">
+               <li onclick="makecss(this,{$vv.mod_id})" id="menu_{$vv.mod_id}"><a href="{$vv.url}" target='rightContent'><i class="fa fa-circle-o"></i>{$vv.title}</a></li>
+             </foreach>
+           </ul>
+         </li>
+         <foreach name="menu_list" item="vo" key="k" >
+           <li class="treeview">
+               <a href="javascript:void(0)">
+                 <i class="fa {$vo.icon}"></i><span>{$vo.title}</span><i class="fa fa-angle-left pull-right"></i>
+               </a>
+               <ul class="treeview-menu">
+                   <foreach name="vo.submenu" item="vv" key="kk">
+                   <li onclick="makecss(this,{$vv.mod_id})" id="menu_{$vv.mod_id}"><a href="{$vv.url}" target='rightContent'><i class="fa fa-circle-o"></i>{$vv.title}</a></li>
+                   </foreach>
+               </ul>
+           </li>
+         </foreach>-->

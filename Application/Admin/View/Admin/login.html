@@ -126,17 +126,17 @@
             layer.alert('用户名或密码不能为空', {icon: 2}); //alert('用户名或密码不能为空');
             return;
         }
-        if(vertify ==''){
+       /* if(vertify ==''){
             layer.alert('验证码不能为空', {icon: 2});
             return;
         }
         if(vertify.length !=4){
             layer.alert('验证码错误', {icon: 2});
             return;
-        }
+        }*/
 
         $.ajax({
-            url:'/index.php?m=Admin&c=Admin&a=login&t='+Math.random(),
+            url:'/task/index.php/Admin/Admin/login',
             type:'post',
             dataType:'json',
             data:{username:username,password:password,vertify:vertify},

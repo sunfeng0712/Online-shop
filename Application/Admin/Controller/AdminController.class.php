@@ -25,10 +25,10 @@ class AdminController extends Controller
         if(IS_POST)
         {
             $verify = new Verify();
-            if(!$verify->check(I('post.vertify'),"Index/login"))
+           /* if(!$verify->check(I('post.vertify'),'1'))
             {
                 die(json_encode(array('status'=>0,'msg'=>'验证码错误')));
-            }
+            }*/
             $condition['username'] = I('post.username');
             $condition['password'] = I('post.password');
             if(!empty($condition['username']) && !empty($condition['password']))
@@ -38,13 +38,10 @@ class AdminController extends Controller
                 if($admin_info && is_array($admin_info))
                 {
                     session('admin_id',$admin_info['admin_id']);
+                    session('username',$admin_info['user_name']);
                     session('act_list',$admin_info['act_list']);
                     //最后登录时间
-                    $last_login_time = M('admin_log')
-                        ->where("admin_id=".$admin_info['admin_id']." AND log_info=".'后台登录')
-                        ->order('log_id desc')
-                        ->limit(1)
-                        ->getField('log_time');
+                    $last_login_time = M('admin_log')->where("admin_id=".$admin_info['admin_id']." AND log_info="."'后台登录'")->order('log_id desc')->limit(1)->getField('log_time');
                     session('last_login_time',$last_login_time);
                     adminLog('后台登录',__ACTION__);//写入操作日志中
                     $url = session('form_url') ? session('form_url') :U('admin/index/index');
@@ -72,7 +69,7 @@ class AdminController extends Controller
             'useNoise' => false,
         );
         $Verify = new Verify($config);
-        $Verify->entry("index/Login");
+        $Verify->entry('1');
     }
 
 }
